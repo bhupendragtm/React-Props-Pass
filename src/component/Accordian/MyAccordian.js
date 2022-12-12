@@ -1,11 +1,12 @@
 import React, {useState} from "react";
+// import "MyAccordian.css";
 
-const MyAccordian = ({ data }) => {
+const MyAccordian = ({question, answer}) => {
   const [show, setShow] = useState(false);
   return (
-    <><div><p onClick={()=>setShow(!show)}>+</p>
-      <h1>{data.question}</h1></div>
-     {show &&<h1>{data.answer}</h1>}
+    <><div className="main-heading"><p onClick={()=>setShow(!show)}><strong>+</strong></p>
+      <h2>{question}</h2></div>
+     {show &&<p className="answers">{answer}</p>}
     </>
   );
 };

@@ -23,5 +23,10 @@ export const questions = [
         id:5,
         question: 'What are the components in React?',
         answer: 'Components are the building blocks of any React application.',
+    },
+    {
+        id:6,
+        question: 'What is conditional Rendering in React?',
+        answer: 'lets create another component that chooses which component to render based on a condition',
     }
 ]
